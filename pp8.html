@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>asdasd</title>
+	<style type="text/css">
+
+		body{
+    		margin:0;
+   			padding:0;	
+			min-width:1300px;;
+			font-family:Arial,Helvetica;
+			}
+		#logobar{
+        	background-color:#fa0740;
+		 	width:100%;
+		 	margin:0 auto;
+		 	height:100px;
+		} 
+		#logo
+		{
+			color: #ffffff;
+			float: left;
+			margin-top: 5px;
+			padding-right: 20px;
+			margin-left: 5px;
+		}
+		
+		#tagline
+		{
+			float: right;
+			margin-top: 35px;
+
+		}
+		#tagline123
+		{
+		
+			position:relative;
+			margin-left:10px;
+			color:#ffffff;
+			padding-right:50px;
+		}
+		.linkbar-container
+		{
+		 border-left: 5px white solid;
+		
+		 background-color:#fa0740;
+		 border-top:5px white solid;
+		 width:100%;
+		 margin:0 auto;
+		 height:55px;
+		 border-bottom: 5px white solid;
+
+		}
+		.linkbar
+		{
+			
+			float:left;
+			border-left:5px white solid;
+
+            position:relative;
+            padding-top:9px;
+			height:90%;
+			margin-left:50px;
+			
+
+		}
+		.linkbarlink
+		{
+			color: #ffffff;
+			position:relative;
+	        top:12px;
+	        margin-left:50px;
+	        padding-right:30px;
+	        font-weight:bold;
+	        left:20px;
+		}
+		#leftmostlink
+		{
+			
+			float:left;
+			color: #ffffff;
+            position:relative;
+            top:20px;
+			height:70%;
+			margin-left:50px;
+			
+		}
+		.searchbar
+		{
+			background-color: #fa0740;
+			float: center;
+		 	margin:0 auto;
+		 	height:40px;
+		 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+		 	
+
+		}
+		#searchbar1{
+			background-color: #fa0740;
+			width:85%;
+			height: 40px;
+			margin:0 auto;
+		}
+		#searchtext {
+    		width: 100%;
+    		box-sizing: border-box;
+    		border: 2px solid #ccc;
+    		border-radius: 4px;
+    		font-size: 16px;
+    		background-color: white;
+    		background-image: url('searchicon_17X17.png');
+    		background-position: 10px 10px; 
+    		background-repeat: no-repeat;
+    		padding: 5px 20px 13px 30px;
+            -webkit-transition: width 0.4s ease-in-out;
+    		transition: width 0.4s ease-in-out;
+		}
+
+		#searchtext:focus {
+   			width: 100%;
+   			background-color: #fa0750
+   		}
+   		.blank{
+   			background-color: #fa0740;
+   			height: 20px;
+   		}
+
+   		.contactus{
+   			background-color: #A9A9A9;
+   			height: 130px;
+   			margin: 0 auto;
+   			width: 100%;
+   		}
+   		#contactustext{
+   			font-family: Arial;
+   			font-style: italic;
+   		}
+   		/*product wrapper starts here*/
+		.wrapper {
+  			width: 650px;
+  			margin: auto;
+  			padding: 25px 0px;
+		}
+		h1, h4 {
+			font-family: Helvetica, Arial, sans-serif;
+			font-weight: normal;
+			margin: 0; 
+		}
+		h1 { 
+		  	font-size: 24pt;
+
+
+		}
+		h4 {
+		  	font-size: 16pt;
+		  	color: #aaa; 
+		}
+		header {
+		  	margin-bottom: 20px; 
+		}
+		figure {
+		  	float: left;
+		}
+		figure img {
+		  	max-width: 350px;
+		}
+		#section1 {
+		  	font-family: Tahoma, Arial, sans-serif;
+		  	line-height: 150%;
+		  	float: right;
+		  	margin-left: 0px;
+		  	padding-right: 300px;
+		  	width: 300px;
+		  	color: #333;
+		  	padding-top: 50px;
+		}
+		#section2{
+			padding-right: 450px;
+			padding-top: 200px;
+			width: 400px;
+			float: left;
+			padding-left: 80px;
+			padding-bottom: 80px;
+		}
+		button {
+		  	background: #36a9ea;
+		  	background: -moz-linear-gradient(top, #36a9ea 0%, #127fd2 100%);
+		  	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#36a9ea), color-stop(100%,#127fd2));
+		  	background: -webkit-linear-gradient(top, #36a9ea 0%,#127fd2 100%);
+		  	background: -o-linear-gradient(top, #36a9ea 0%,#127fd2 100%);
+		  	background: -ms-linear-gradient(top, #36a9ea 0%,#127fd2 100%);
+		  	background: linear-gradient(top, #36a9ea 0%,#127fd2 100%);
+		  	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#36a9ea', endColorstr='#127fd2',GradientType=0 );
+		  	border: 1px solid #00599d;
+		  	color: #fff;
+		  	padding: 8px 20px;
+		  -webkit-border-radius: 3px;
+		  	border-radius: 3px;
+		  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, .1), inset 0px 1px 0px 0px rgba(250, 250, 250, .3);
+		  	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, .1), inset 0px 1px 0px 0px rgba(250, 250, 250, .3);
+		  	text-shadow: 0px 1px 1px #156cc4;
+		  	filter: dropshadow(color=#156cc4, offx=0, offy=1);
+		  font-size: 10pt; 
+		}
+		 
+		button:hover {
+		  	background: #2f90d5;
+		  	background: -moz-linear-gradient(top, #2f90d5 0%, #0351b7 100%);
+		  	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2f90d5), color-stop(100%,#0351b7));
+		  	background: -webkit-linear-gradient(top, #2f90d5 0%,#0351b7 100%);
+		  	background: -o-linear-gradient(top, #2f90d5 0%,#0351b7 100%);
+		  	background: -ms-linear-gradient(top, #2f90d5 0%,#0351b7 100%);
+		  	background: linear-gradient(top, #2f90d5 0%,#0351b7 100%);
+		  	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#2f90d5', endColorstr='#0351b7',GradientType=0 );
+		}
+		 
+		button:active {
+		  	background: #127fd2;
+		  -webkit-box-shadow: inset 0px 2px 1px 0px rgba(0, 47, 117, .5), 0px 1px 1px 0px rgba(0, 0, 0, 0);
+		  box-shadow: inset 0px 2px 1px 0px rgba(0, 47, 117, .5), 0px 1px 1px 0px rgba(0, 0, 0, 0); 
+		}
+	</style>
+</head>
+<body>
+	<div id="logobar">
+		<img id="logo" src="logo.JPG">
+		<div id="tagline">
+			<span id="tagline123">Click to get the <b>BEST</b> ! </span>
+		</div>
+	</div>
+
+	<!-- LINK BAR SECTION ALL THE QUICK LINKS TO THE PRODUCTS OF A SPECIFIC TYPE -->
+	<div class="linkbar-container">
+		<div >
+			<strong><span id="leftmostlink">ELECTRONICS</span></strong>
+		</div>
+		<div class="linkbar">
+			<span class="linkbarlink">MEN CLOTHING</span>
+		</div>
+		<div class="linkbar">
+			<span class="linkbarlink">WOMEN CLOTHING</span>
+		</div>
+		<div class="linkbar">
+			<span class="linkbarlink">BOOKS</span>
+		</div>
+		<div class="linkbar">
+			<span class="linkbarlink">FOOTWEAR</span>
+		</div>
+		<div class="linkbar">
+			<span class="linkbarlink">BAGS</span>
+		</div>
+	</div>
+		<!-- Search bar here-->
+
+	<div class="blank">
+	</div>	
+	<div class="searchbar">
+		<div id="searchbar1">
+		<div id="searchbarfield">
+			<form method="post" action="search.php">
+  				<input id="searchtext" type="text" name="search" placeholder="Search">
+			</form>
+		</div>
+		</div>
+	</div>
+	<div class="blank">
+	</div>	
+	<div class="product">
+ 		<header>
+    		<hgroup>
+      			<h1>Skybag suitcase</h1><!-- Here product name--> <!--phani-->
+      			<h4>Easy to carry for more luggage</h4><!-- Write product tagline if any--><!--phani-->
+    		</hgroup>
+  		</header>
+ 
+  		<figure>
+    		<img src="skybagsuitcase.jpeg"><!-- Just keep the image in the same folder and write like this in between"...." like Sony_television.jpg--><!--phani-->
+  		</figure>
+ 		<section id="section1">
+ 			<p>blue colour,soft body</p><!--write here the description--><!-- phani-->
+ 			
+ 			<a href="https://localhost/pp8.php"><button>Buy Now</button></a>
+ 		</section>
+ 		
+	</div>
+	<div id="section2">
+ 		<details>
+   		<summary>Product Features</summary>
+      	<ul>
+        <li>Blue colour</li><!-- Write here the features--> <!--phani-->
+        <li>rating is 4.3</li>
+      	</ul>
+  		</details>
+  	</div>
+</body>
+</html>

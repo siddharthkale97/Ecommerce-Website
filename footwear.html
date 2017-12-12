@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>CLICKSHOP</title>
+	<style type="text/css">
+	
+		body{
+    		margin:0;
+   			padding:0;	
+			min-width:1300px;;
+			font-family:Arial,Helvetica;
+			}
+		#logobar{
+        	background-color:#fa0740;
+		 	width:100%;
+		 	margin:0 auto;
+		 	height:100px;
+		} 
+		#logo
+		{
+			
+			color: #ffffff;
+			float: left;
+			margin-top: 5px;
+			padding-right: 20px;
+			margin-left: 5px;
+		}
+		
+		#tagline
+		{
+			float: right;
+			margin-top: 35px;
+
+		}
+		#tagline123
+		{
+		
+			position:relative;
+			margin-left:10px;
+			color:#ffffff;
+			padding-right:50px;
+		}
+		.linkbar-container
+		{
+		 border-left: 5px white solid;
+		
+		 background-color:#fa0740;
+		 border-top:5px white solid;
+		 width:100%;
+		 margin:0 auto;
+		 height:55px;
+		 border-bottom: 5px white solid;
+
+		}
+		.linkbar
+		{
+			
+			float:left;
+			border-left:5px white solid;
+
+            position:relative;
+            padding-top:9px;
+			height:90%;
+			margin-left:50px;
+			
+
+		}
+		.linkbarlink
+		{
+			color: #ffffff;
+			position:relative;
+	        top:12px;
+	        margin-left:50px;
+	        padding-right:30px;
+	        font-weight:bold;
+	        left:20px;
+		}
+		#leftmostlink
+		{
+			
+			float:left;
+			color: #ffffff;
+            position:relative;
+            top:20px;
+			height:70%;
+			margin-left:50px;
+			
+		}
+		.searchbar
+		{
+			background-color: #fa0740;
+			float: center;
+		 	margin:0 auto;
+		 	height:40px;
+		 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+		 	
+
+		}
+		#searchbar1{
+			background-color: #fa0740;
+			width:85%;
+			height: 40px;
+			margin:0 auto;
+		}
+		#searchtext {
+    		width: 100%;
+    		box-sizing: border-box;
+    		border: 2px solid #ccc;
+    		border-radius: 4px;
+    		font-size: 16px;
+    		background-color: white;
+    		background-image: url('searchicon_17X17.png');
+    		background-position: 10px 10px; 
+    		background-repeat: no-repeat;
+    		padding: 5px 20px 13px 30px;
+            -webkit-transition: width 0.4s ease-in-out;
+    		transition: width 0.4s ease-in-out;
+		}
+
+		#searchtext:focus {
+   			width: 100%;
+   			background-color: #3CBC8D
+   		}
+   		.blank{
+   			background-color: #fa0740;
+   			height: 20px;
+   		}
+   		.contactus{
+   			background-color: #A9A9A9;
+   			height: 130px;
+   			margin: 0 auto;
+   			width: 100%;
+   		}
+   		#contactustext{
+   			font-family: Arial;
+   			font-style: italic;
+   		}
+/*highlit conainer slid show here*/
+/* Slideshow container */
+.highlightcontainer{
+	height: 100px;
+	width: 100%;
+	
+}
+.mySlides {display:none}
+.slideshow-container {
+  max-width: 10px;
+  position: relative;
+  margin: auto;
+  height: 100px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: 35px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: #000000;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+/*Hight container ends here*/
+   		.productcontainer{
+   			height: 240px;
+   			width: 100%;
+   			box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.2);
+   		}
+   		.productcard {
+   			margin-left:200px;
+   			float: left;
+   			padding-right: 5px;
+    		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   			transition: 0.3s;
+    		width: 34.89%;
+		}
+		.productsubcontainer
+		{
+			float: left;
+			width:400px;
+   			padding-right: 4px;	
+		}
+		.productcard:hover {
+    		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+		}
+
+		.container {
+    		padding: 0px 8px;
+		}
+		A.class1 {color:#ffffff;
+			text-decoration: none;
+		}
+		A.class1:link  {text-decoration: none; color: #ffffff;}
+		A.class1:visited {text-decoration: none; color: #ffffff;}
+		A.class1:hover {text-decoration: none; color:#ffffff;}
+		A.class1:active {text-decoration: none; color: #ffffff;}
+
+
+		A.class2 { text-decoration:none;color: black;}
+		A.class2:link {text-decoration: none; color: black;}
+		A.class2:visited {text-decoration: none; color: black;}
+		A.class2:hover {text-decoration: none; color: black;}
+		A.class2:active {text-decoration: none; color: black;}
+	</style>
+</head>
+<body>
+	<div id="logobar">
+		<img id="logo" src="logo.JPG">
+		<div id="tagline">
+			<span id="tagline123">Click to get the <b>BEST</b> ! </span>
+		</div>
+	
+	</div>
+
+	<!-- LINK BAR SECTION ALL THE QUICK LINKS TO THE PRODUCTS OF A SPECIFIC TYPE -->
+	<div class="linkbar-container">
+		<div >
+			<strong><span id="leftmostlink"><a href="electronics.html" class="class1">ELECTRONICS</a></span></strong>
+		</div>
+		<div class="linkbar">
+			<span class="linkbarlink"><a href="men.html" class="class1">MEN CLOTHING</a></span>
+		</div>
+		<div class="linkbar">
+			<span class="linkbarlink"><a href="women.html" class="class1">WOMEN CLOTHING</a></span>
+		</div>
+		<div class="linkbar">
+			<span class="linkbarlink"><a href="books.html" class="class1">BOOKS</a></span>
+		</div>
+		<div class="linkbar">
+			<span class="linkbarlink"><a href="footwear.html" class="class1">FOOTWEAR</a></span>
+		</div>
+		<div class="linkbar">
+			<span class="linkbarlink"><a href="bags.html" class="class1">BAGS</a></span>
+		</div>
+	</div>
+		<!-- Search bar here-->
+
+	<div class="blank">
+	</div>	
+	<div class="searchbar">
+		<div id="searchbar1">
+		<div id="searchbarfield">
+			<form method="post" action="search.php">
+  				<input id="searchtext" type="text" name="search" placeholder="Search">
+			</form>
+		</div>
+		</div>
+	</div>
+	<div class="blank">
+	</div>	
+	<div class="blank"></div>
+	<!--  product containers here-->
+	<div class="productcontainer">
+		<div class="productsubcontainer">
+			<div class="productcard">
+  				<img src="sparxmen'scanvaswear.jpeg" style="width:100%"><!--working here-->
+  				<div class="container">
+   					<h4><b><a class="class2" href="pp21.html">Sparx Men's Canvas Wear</a></b></h4> 
+  				</div>
+			</div>
+		</div>
+		<div class="productsubcontainer">
+			<div class="productcard">
+  			<img src="paragonslippers.jpg" style="width:100%">
+  			<div class="container">
+   				<h4><b><a class="class2" href="pp23.html">Paragon slippers</a></b></h4> 
+  			</div>
+			</div>
+		</div>
+		<div class="productsubcontainer">
+			<div class="productcard">
+  			<img src="nikeslippers.jpeg" style="width:100%">
+  			<div class="container">
+   				<h4><b><a class="class2" href="pp24.html">Nike slippers</a></b></h4> 
+  			</div>
+			</div>
+		</div>
+	</div>
+	<div class="blank"></div>
+	<div class="contactus">
+		<h4>Contact Us-</h4>
+		<address>
+		<span id="contactustext">
+			Vit University Chennai Campus<br>
+			Vandalur-Kelambakkam Road<br>
+			Chennai-600 127, Tamil Nadu, India<br>
+			Phone no- +91 44 3993 1555<br>
+					  +91 44 3993 2555<br>
+		</span>
+		</address>
+		
+	</div>
+	
+</body>
+</html>
